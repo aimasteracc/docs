@@ -1,23 +1,23 @@
 ---
-title: Privacy FAQ
+title: プライバシーFAQ
 ---
 
-### What is Privacy Mode? 
+### プライバシーモードとは何ですか？
 
-With `Privacy Mode`, none of your code will ever be stored by us or any third-party (except for OpenAI which persists the prompts we send to them for 30 days for trust and safety, unless you're on the business plan). Otherwise, we may save prompts / collect telemetry data to improve Cursor. 
+`プライバシーモード`を使用すると、あなたのコードは当社や第三者によって保存されることはありません（ビジネスプランを利用していない場合、OpenAIは信頼性と安全性のために送信されたプロンプトを30日間保持します）。それ以外の場合、Cursorの改善のためにプロンプトの保存やテレメトリデータの収集を行う場合があります。
 
-You can enable `Privacy Mode` under `Cursor Settings` > `General` > `Privacy Mode`.
+`プライバシーモード`は、`Cursor設定` > `一般` > `プライバシーモード`で有効にできます。
 
 <Frame>
-  <img src="/images/get-started/privacy-mode.png" alt="Privacy Mode" />
+  <img src="/images/get-started/privacy-mode.png" alt="プライバシーモード" />
 </Frame>
 
-### Are requests always routed through the Cursor backend? 
+### リクエストは常にCursorのバックエンドを経由しますか？
 
-Yes! Even if you use your API key, your requests will still go through our backend! That's where we do our final prompt building.
+はい！APIキーを使用する場合でも、リクエストは当社のバックエンドを経由します！最終的なプロンプトの構築はそこで行われます。
 
-### Does indexing the codebase require storing code? 
+### コードベースのインデックス作成にコードの保存は必要ですか？
 
-It does not! If you choose to index your codebase, Cursor will upload your codebase in small chunks to our server to compute embeddings, but all plaintext code ceases to exist after the life of the request. 
+必要ありません！コードベースのインデックスを作成する場合、Cursorはエンベディングを計算するためにコードベースを小さなチャンクに分けてサーバーにアップロードしますが、プレーンテキストのコードはリクエストの寿命が終わると消去されます。
 
-The embeddings and metadata about your codebase (hashes, file names) are stored in our database, but none of your code is.
+コードベースに関するエンベディングとメタデータ（ハッシュ、ファイル名）は当社のデータベースに保存されますが、コード自体は保存されません。
