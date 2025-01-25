@@ -1,38 +1,38 @@
 ---
-title: "Overview"
+title: "概要"
 ---
 
-Cursor Tab is our native autocomplete feature. It's a more powerful Copilot that suggests entire diffs with especially good memory.
+Cursor Tabは、私たちのネイティブな自動補完機能です。特に優れたメモリを持ち、完全な差分を提案できるより強力なCopilotです。
 
 <Frame>
   <video src="/images/cpp/cpp-full-video.mp4" autoPlay loop muted playsInline />
 </Frame>
 
-Powered by a custom model, Cursor Tab can:
+カスタムモデルを搭載したCursor Tabは以下のことができます：
 
-* Suggest edits around your cursor, not just insertions of additional code.
-* Modify multiple lines at once.
-* Make suggestions based on your recent changes and linter errors.
+* コードの追加だけでなく、カーソル周辺の編集を提案
+* 複数行を同時に修正
+* 最近の変更やリンターエラーに基づいて提案を行う
 
-Free users receive 2000 suggestions at no cost. Pro and Business plans receive unlimited suggestions.
+無料ユーザーは2000回の提案を無料で受けられます。ProとBusinessプランは無制限の提案を受けられます。
 
-### UI
+### ユーザーインターフェース
 
-When Cursor is only adding additional text, completions will appear as grey text. If a suggestion modifies existing code,
-it will appear as a diff popup to the right of your current line.
+Cursorがテキストを追加するだけの場合、補完はグレーのテキストとして表示されます。既存のコードを修正する提案の場合、
+現在の行の右側に差分ポップアップとして表示されます。
 
 <Frame className="flex items-stretch justify-center">
   <img src="/images/cpp/ghost-text-example.png" className="h-full object-cover"/>
   <img src="/images/cpp/preview-box-example.png" className="h-full object-cover"/>
 </Frame>
 
-You can accept a suggestion by pressing `Tab`, or reject it by pressing `Esc`. To partially accept a suggestion word-by-word, press `Ctrl/⌘ →`. 
-To reject a suggestion, just keep typing, or use `Escape` to cancel/hide the suggestion.
+提案を受け入れるには`Tab`キーを、拒否するには`Esc`キーを押します。提案を単語単位で部分的に受け入れるには、`Ctrl/⌘ →`を押します。
+提案を拒否するには、そのまま入力を続けるか、`Escape`を使用して提案をキャンセル/非表示にします。
 
-Every keystroke or cursor movement, Cursor will attempt to make a suggestion based on your recent changes. However, Cursor will not always show a suggestion; sometimes the model has predicted that there's no change to be made.
+キーストロークやカーソルの移動のたびに、Cursorは最近の変更に基づいて提案を試みます。ただし、Cursorは常に提案を表示するわけではありません。モデルが変更の必要がないと予測することもあります。
 
-Cursor can make changes from one line above to two lines below your current line.
+Cursorは現在の行の1行上から2行下までの範囲で変更を行うことができます。
 
-### Toggling
+### 切り替え
 
-To turn the feature on or off, hover over "Cursor Tab" icon on the status bar in the bottom right of the application.
+この機能のオン/オフを切り替えるには、アプリケーションの右下のステータスバーにある「Cursor Tab」アイコンにカーソルを合わせます。
