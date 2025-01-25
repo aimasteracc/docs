@@ -1,52 +1,50 @@
 ---
-title: "Overview"
+title: "概要"
 ---
 
-Cmd K, also known or "Ctrl K" on Windows/Linux, allows you to generate new code or edit existing code in the editor window.
+Cmd K（WindowsやLinuxでは"Ctrl K"としても知られる）を使用すると、エディターウィンドウで新しいコードを生成したり、既存のコードを編集したりすることができます。
 
 <Frame>
 <img src="/images/cmdk/regular.png" />
 </Frame>
 
-### Prompt Bars 
+### プロンプトバー
 
-In Cursor, we call the bar that appears when you press `Ctrl/Cmd K` the "Prompt Bar". It works similarly to the AI input box for chat, in 
-which you can type normally, or use [@ symbols](context/@-symbols) to reference other context. 
+Cursorでは、`Ctrl/Cmd K`を押すと表示されるバーを「プロンプトバー」と呼んでいます。これは、チャット用のAI入力ボックスと同様に機能し、通常の入力や、[@ シンボル](context/@-symbols) を使用して他のコンテキストを参照することができます。
 
 
-### Inline Generation
+### インライン生成
 
-If no code is selected when you press `Ctrl/Cmd K`, Cursor will generate new code based on the prompt you type in the prompt bar. 
+`Ctrl/Cmd K`を押した時にコードが選択されていない場合、Cursorはプロンプトバーに入力されたプロンプトに基づいて新しいコードを生成します。
 
 <Frame>
 <img src="/images/cmdk/generate.png" />
 </Frame>
 
 
-### Inline Edits 
+### インライン編集
 
-For in-place edits, you can simply select the code you want to edit and type into the prompt bar.
+その場での編集を行うには、編集したいコードを選択してプロンプトバーに入力するだけです。
 
 <Frame>
 <img src="/images/cmdk/edit.png" />
 </Frame>
 
 
-### Follow-up Instructions
+### フォローアップ指示
 
-After each generation, you can further refine the prompt by adding more instructions to the prompt bar, and pressing `Enter` so the AI regenerates based on your follow-up instructions. 
-
-
-### Default Context
-
-By default, Cursor will try to find different kinds of useful information to improve code generation, in addition to the manual [@ symbols](/context/@-symbols/@-files) you include.
-
-Additional context may include related files, recently viewed files, and more. After gathering, Cursor ranks the context items by relevance to your edit/generation 
-and keeps the top items in context for the large language model.
+各生成の後、プロンプトバーにさらに指示を追加し、`Enter`を押すことで、フォローアップ指示に基づいてAIが再生成を行います。
 
 
-### Quick Question
+### デフォルトコンテキスト
 
-If you press `Option/Alt Enter` while in the prompt bar, Cursor will respond to any questions you have about the selection, and the context you have attached. 
+デフォルトでは、Cursorは手動で追加する[@ シンボル](/context/@-symbols/@-files) に加えて、コード生成を改善するために様々な有用な情報を見つけようとします。
 
-The contents of this conversation could be further used in follow-up generations, so you could simply type "do it" after Cursor comes up with a response to generate the code after a quick question.
+追加のコンテキストには、関連ファイル、最近表示したファイルなどが含まれます。収集後、Cursorはコンテキスト項目を編集/生成との関連性によってランク付けし、上位の項目を大規模言語モデルのコンテキストとして保持します。
+
+
+### クイック質問
+
+プロンプトバーで`Option/Alt Enter`を押すと、Cursorは選択内容や添付されたコンテキストに関する質問に回答します。
+
+この会話の内容は、その後の生成でも使用できるため、Cursorが回答を提供した後に単に「do it」と入力するだけで、クイック質問の後にコードを生成することができます。
