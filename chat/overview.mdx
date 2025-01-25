@@ -1,71 +1,68 @@
 ---
-title: "Overview"
+title: "概要"
 ---
 
-Cursor Chat lets you ask questions or solve problems in your codebase with the most capable language models, all in your editor. 
-
+Cursor Chatを使用すると、最も高性能な言語モデルを使用して、エディター内でコードベースに関する質問や問題解決ができます。
 
 <Frame>
   <img src="/images/chat/chat.png" />
 </Frame>
 
-For language models to give good answers, they need to know specific things that are relevant to your codebase -- context. 
+言語モデルが適切な回答を提供するためには、コードベースに関連する具体的な情報（コンテキスト）が必要です。
 
-Cursor has several built in features to provide context in chat, such as automatically including context across your entire codebase, searching the web, 
-indexing documentation, and user-specified references to code blocks. They are built to eliminate the tedious copy-pasting otherwise necessary for working with language models on code.
+Cursorには、コードベース全体のコンテキストの自動取得、ウェブ検索、ドキュメントのインデックス化、ユーザーが指定したコードブロックの参照など、チャットにコンテキストを提供するための機能が組み込まれています。これらの機能により、コードに関する言語モデルの使用において、面倒なコピー&ペーストが不要になります。
 
-By default, Cursor Chat is in the AI pane, which is on the opposite side of your primary sidebar. You can toggle the AI pane by pressing `Ctrl/⌘ + L`, which focuses onto the chat when opened.
-To submit your query, press `Enter`.
-
-
-### User and AI Messages 
-
-User messages contain the text you type, along with the context you've referenced. You can go back to any previous user messages to edit and rerun your queries. This will
-overwrite any messages after that and regenerate new ones.
-
-AI messages are the responses generated from the AI model you've picked. They are paired with the user message before them. AI messages may contain parsed code blocks which can be added to your codebase with [instant apply](/chat/apply).
-
-All user/AI messages together in the same thread are called a chat thread, and each chat thread is saved in your chat history. 
+デフォルトでは、Cursor ChatはAIペインにあり、プライマリサイドバーの反対側に配置されています。`Ctrl/⌘ + L`を押すとAIペインの表示を切り替えることができ、開いた時にはチャットにフォーカスが移動します。
+クエリを送信するには`Enter`を押します。
 
 
-### Chat History
+### ユーザーメッセージとAIメッセージ
 
-By pressing on the "Previous Chats" button on the top right of the AI pane, or by pressing `Ctrl/⌘ + Alt/Option + L`, you can see the chat history. You can click on any chat thread to go back and see the messages that make up that thread,
-and you can also modify the title of the thread by clicking the pen icon, or delete the thread by clicking the garbage can icon upon hovering over the thread in the history. 
+ユーザーメッセージには、入力したテキストと参照したコンテキストが含まれます。以前のユーザーメッセージに戻って編集し、クエリを再実行することができます。これにより、
+それ以降のメッセージが上書きされ、新しいメッセージが生成されます。
 
-The title of a Cursor thread is just the first few words of the first user message.
+AIメッセージは、選択したAIモデルによって生成された応答です。これらは直前のユーザーメッセージとペアになっています。AIメッセージには、[インスタント適用](/chat/apply) でコードベースに追加できるパース済みのコードブロックが含まれる場合があります。
 
-
-### Default Context
-
-By default, Cursor Chat includes the current file as context. You can submit a query without including any context by pressing `Alt/Option Enter` on submit,
-or turn on `Default to no context` under `Cursor Settings` > `Features` > `Chat`. Chats that begin with a no-context request will not add context for any messages.
-
-As you type, you can see what will be included in context in the pills below the input box.
+同じスレッド内のすべてのユーザー/AIメッセージをまとめてチャットスレッドと呼び、各チャットスレッドはチャット履歴に保存されます。
 
 
-### Adding Context 
+### チャット履歴
 
-By default, user messages will contain the text you type, along with the context you've referenced. You can add more custom context to each bubble with @ symbols, and by default,
-the current viewing file will be used as context as well in the user message. 
+AIペインの右上にある「過去のチャット」ボタンをクリックするか、`Ctrl/⌘ + Alt/Option + L`を押すと、チャット履歴を表示できます。任意のチャットスレッドをクリックすると、そのスレッドを構成するメッセージを確認できます。
+また、ペンアイコンをクリックしてスレッドのタイトルを変更したり、履歴内のスレッドにカーソルを合わせたときに表示されるゴミ箱アイコンをクリックしてスレッドを削除したりすることもできます。
 
-See the [@ symbols](/context/@-symbols/@-files) pages for more information.
+Cursorスレッドのタイトルは、最初のユーザーメッセージの最初の数単語です。
 
 
-### AI Fix in Chat
+### デフォルトのコンテキスト
 
-A convenient feature to fix linter errors in your codebase is to use the AI fix in chat. To do this, hover over the error in the editor, and click the blue AI fix button that shows up.
+デフォルトでは、Cursor Chatは現在のファイルをコンテキストとして含めます。送信時に`Alt/Option Enter`を押すか、
+`Cursor設定` > `機能` > `チャット`で`デフォルトでコンテキストなし`をオンにすることで、コンテキストを含めずにクエリを送信できます。コンテキストなしのリクエストで始まるチャットは、どのメッセージにもコンテキストを追加しません。
 
-The keyboard shortcut for this would be to do `Ctrl/⌘ + Shift + E`.
+入力中に、入力ボックスの下のピルで、コンテキストとして含まれる内容を確認できます。
+
+
+### コンテキストの追加
+
+デフォルトでは、ユーザーメッセージには入力したテキストと参照したコンテキストが含まれます。@記号を使用して各バブルにカスタムコンテキストを追加でき、
+デフォルトでは現在表示しているファイルもユーザーメッセージのコンテキストとして使用されます。
+
+詳細については、[@記号](/context/@-symbols/@-files) のページをご覧ください。
+
+
+### チャットでのAI修正
+
+コードベースのリンターエラーを修正する便利な機能として、チャットでのAI修正があります。エディターでエラーにカーソルを合わせ、表示される青いAI修正ボタンをクリックします。
+
+このキーボードショートカットは`Ctrl/⌘ + Shift + E`です。
 
 <Frame>
   <img src="/images/chat/ai-fix.png" />
 </Frame>
 
 
+### 長文コンテキストチャット（ベータ版）
 
-### Long Context Chat (Beta)
+`Cursor設定` > `ベータ版` > `長文コンテキストチャット`で長文コンテキストチャットを有効にできます。有効にすると、`Ctrl/⌘ .`で異なるチャットモードを切り替えることができます。
 
-You can enable long context chat by going to `Cursor Settings` > `Beta` > `Long Context Chat`. With this enabled, you can toggle different chat modes through `Ctrl/⌘ .`. 
-
-Long context chat allows you to include entire folders as context, since the supported models have a larger context window. Check out more about the long context only models [here](/advanced/models#long-context-only-models).
+長文コンテキストチャットでは、サポートされているモデルのコンテキストウィンドウが大きいため、フォルダー全体をコンテキストとして含めることができます。長文コンテキスト専用モデルについての詳細は[こちら](/advanced/models#long-context-only-models) をご覧ください。

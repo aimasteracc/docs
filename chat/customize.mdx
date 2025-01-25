@@ -1,39 +1,39 @@
 ---
-title: Customize
+title: カスタマイズ
 ---
 
-### Choose an AI Model
+### AIモデルの選択
 
-Pick your preferred AI model through the [model toggle](/advanced/models#model-dropdown), and Cursor Chat will use that model to generate responses. You can toggle between models by pressing `Ctrl/⌘ /`. 
+[モデル切り替え](/advanced/models#model-dropdown) からお好みのAIモデルを選択すると、Cursor Chatはそのモデルを使用して応答を生成します。`Ctrl/⌘ /`を押すことでモデルを切り替えることができます。
 
-By default, Cursor Chat uses OpenAI's `GPT-4` for its AI model (specifically, the `gpt-4` label points to our instance of GPT4-Turbo).
+デフォルトでは、Cursor ChatはOpenAIの`GPT-4`をAIモデルとして使用します（具体的には、`gpt-4`ラベルは当社のGPT4-Turboインスタンスを指します）。
 
-The AI model you choose for Chat will be saved for future sessions, so you don't have to change it every time you open Cursor Chat.
+チャット用に選択したAIモデルは次回以降のセッションでも保存されるため、Cursor Chatを開くたびに変更する必要はありません。
 
 <Frame>
   <img src="/images/chat/model-toggle.png" />
 </Frame>
 
 
-### In-Editor
+### エディター内での使用
 
-Cursor Chat can also be used as an editor tab by clicking on the horizontal "More" button, and then clicking on the "Open Chat in Editor" button.
-Cursor Chat will then behave as a regular editor tab. Pressing `Ctrl/⌘ + L` will bring up the chat tab and focus onto it. 
+Cursor Chatは、横の「その他」ボタンをクリックし、「チャットをエディターで開く」ボタンをクリックすることで、エディタータブとしても使用できます。
+Cursor Chatは通常のエディタータブとして動作します。`Ctrl/⌘ + L`を押すとチャットタブが表示され、フォーカスが移動します。
 
 
-### Settings
+### 設定
 
-You can customize the Cursor Chat under `Cursor Settings` > `Features` > `Chat`.
+Cursor Chatは`Cursor設定` > `機能` > `チャット`でカスタマイズできます。
 
-These settings include:
+設定項目には以下が含まれます：
 
-- Always search the web for answers.
-  - This will make the AI model browse the web each query for the most up-to-date information.
-- Add chat fading animation.
-  - This adds a smooth animation to the AI messages as they are generated.
-- Default to no context.
-  - This will make the AI model only use the user message as context, and no additional context such as current file will be included.
-- Auto scroll chat.
-  - This will automatically scroll the chat as the AI generates text when at the bottom of the thread.
-- Narrow scrollbar in the chat pane.
-- Show chat history when starting a new chat.
+- 常にウェブで回答を検索する
+  - AIモデルが各クエリに対して最新の情報を得るためにウェブを閲覧します。
+- チャットのフェードアニメーションを追加
+  - AIメッセージの生成時にスムーズなアニメーションを追加します。
+- デフォルトでコンテキストなし
+  - AIモデルはユーザーメッセージのみをコンテキストとして使用し、現在のファイルなどの追加コンテキストは含まれません。
+- チャットの自動スクロール
+  - スレッドの最下部にいる場合、AIがテキストを生成する際に自動的にスクロールします。
+- チャットペインの細いスクロールバー
+- 新しいチャットを開始する際にチャット履歴を表示

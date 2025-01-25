@@ -1,32 +1,30 @@
 ---
-title: "With Codebase"
+title: "コードベースを使用"
 ---
 
-### Default Codebase Chat 
+### デフォルトのコードベースチャット
 
-If a codebase isn't [indexed](/context/codebase-indexing), Cursor Chat will first attempt to compute a few search queries to
-be used to search across your codebase. For better accuracy, it's recommended to use [embeddings search](#embeddings-search).
+コードベースが[インデックス化](/context/codebase-indexing) されていない場合、Cursor Chatはまずコードベース全体を検索するための検索クエリを生成しようとします。より正確な結果を得るためには、[埋め込み検索](#embeddings-search) を使用することをお勧めします。
 
 <Frame>
 <img src="/images/chat/no-embeddings.png" />
 </Frame>
 
 
-### Embeddings Search
+### 埋め込み検索
 
-With [codebase indexing](/context/codebase-indexing), Cursor Chat can accurately generate responses based on your codebase.
+[コードベースのインデックス化](/context/codebase-indexing) により、Cursor Chatはコードベースに基づいて正確な応答を生成できます。
 
-By pressing `Ctrl/⌘ + Enter` after typing a message, Cursor Chat scans through your indexed codebase to find pieces of relevant code. This is generally
-good for quickly including code snippets to be taken into the context of the conversation. For more control over the codebase search and better accuracy, 
-you can use `@codebase`.
+メッセージを入力した後に`Ctrl/⌘ + Enter`を押すと、Cursor Chatはインデックス化されたコードベースをスキャンして関連するコードを見つけます。これは一般的に、
+会話のコンテキストに含めるコードスニペットをすばやく取得するのに適しています。コードベース検索をより詳細に制御し、より正確な結果を得るには、
+`@codebase`を使用できます。
 
 <Frame>
 <img src="/images/chat/embeddings.png" />
 </Frame>
 
-### Advanced Codebase Search 
+### 高度なコードベース検索
 
-Cursor codebase chat goes through a more detailed search when `@Codebase` is used. 
+`@Codebase`を使用すると、Cursor コードベースチャットはより詳細な検索を実行します。
 
-See more about `@Codebase` [here](/context/@-symbols/@-codebase).
-
+`@Codebase`についての詳細は[こちら](/context/@-symbols/@-codebase) をご覧ください。
