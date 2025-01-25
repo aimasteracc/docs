@@ -1,39 +1,39 @@
 ---
-title: Common Issues
+title: よくある問題
 ---
 
-#### I see an update on the changelog but Cursor won't update.
+#### 更新履歴に新しいアップデートがありますが、Cursorが更新されません。
 
-If the update is very new, it might not have rolled out to you yet. We do staged rollouts, which means we release new updates to a few randomly selected users first before releasing them to everyone. Typically, reaching all users takes around 5 hours from the first user. For larger updates, it can take longer.
+アップデートが非常に新しい場合、まだあなたに配信されていない可能性があります。段階的なロールアウトを行っているため、新しいアップデートは最初にランダムに選ばれた一部のユーザーにリリースされ、その後全ユーザーに配信されます。通常、最初のユーザーから全ユーザーへの配信には約5時間かかります。大規模なアップデートの場合は、さらに時間がかかることがあります。
 
-If you don't want to wait, you can redownload Cursor from our [homepage](https://cursor.com/). You'll likely receive the latest update instantly. Don't worry, all of your settings, extensions, etc., will transfer to the redownloaded version. You don't have to uninstall the existing version first.
+待ちたくない場合は、[ホームページ](https://cursor.com/) からCursorを再ダウンロードすることができます。最新のアップデートをすぐに受け取ることができるでしょう。設定や拡張機能などはすべて再ダウンロードしたバージョンに引き継がれるので、心配ありません。既存のバージョンを先にアンインストールする必要もありません。
 
-#### I have issues with my GitHub login in Cursor / How do I log out of GitHub in Cursor?
+#### CursorでGitHubログインに問題がある / CursorでGitHubからログアウトするにはどうすればよいですか？
 
-You can try using the `Sign Out of GitHub` command from the command palette `Ctrl/⌘ + Shift + P`.
+コマンドパレット（`Ctrl/⌘ + Shift + P`）から`GitHubからサインアウト`コマンドを使用してみてください。
 
-#### I can't use GitHub Codespaces.
+#### GitHub Codespacesが使用できません。
 
-Unfortunately, we don't support GitHub Codespaces yet.
+申し訳ありませんが、現在GitHub Codespacesはサポートしていません。
 
-#### I have errors connecting to Remote SSH.
+#### リモートSSH接続でエラーが発生します。
 
-Currently, we don't support SSHing into Windows machines. If you're not using a Windows machine, please report your issue to us in the [forum](https://forum.cursor.com/). It would be helpful to include some logs for better assistance.
+現在、WindowsマシンへのSSH接続はサポートしていません。Windowsマシンを使用していない場合は、[フォーラム](https://forum.cursor.com/) で問題を報告してください。より良いサポートのために、ログを含めていただけると助かります。
 
-#### Cursor Tab and Cmd K do not work behind my corporate proxy.
+#### 企業のプロキシ環境でCursor TabとCmd Kが動作しません。
 
-Cursor Tab and Cmd K use HTTP/2 by default, which allows us to use less resources with lower latency. Some corporate proxies (e.g. Zscaler in certain configurations) block HTTP/2. To fix this, you can set `"cursor.general.disableHttp2": true` in the settings (`Cmd/Ctrl + ,` and then search for `http2`).
+Cursor TabとCmd KはデフォルトでHTTP/2を使用しており、これにより少ないリソースで低レイテンシーを実現しています。一部の企業プロキシ（特定の設定のZscalerなど）ではHTTP/2がブロックされています。これを解決するには、設定（`Cmd/Ctrl + ,`を押して`http2`を検索）で`"cursor.general.disableHttp2": true`を設定してください。
 
-#### I just subscribed to Pro but I'm still on the free plan in the app.
+#### Proプランに登録したばかりですが、アプリ内ではまだ無料プランのままです。
 
-Try logging out and logging back in from [Settings](/get-started/migrate-from-vscode#cursor-settings).
+[設定](/get-started/migrate-from-vscode#cursor-settings) からログアウトして再度ログインしてみてください。
 
-#### When will my usage reset again?
+#### 使用量はいつリセットされますか？
 
-If you're subscribed to Pro you can click on `Manage Subscription` from the [Dashboard](https://cursor.com/settings) and your plan renewal date will be displayed at the top.
+Proプランに登録している場合は、[ダッシュボード](https://cursor.com/settings) から`サブスクリプション管理`をクリックすると、上部にプラン更新日が表示されます。
 
-If you're a free user you can check when you got the first email from us in your inbox. Your usage will reset every month from that date.
+無料ユーザーの場合は、受信トレイで当社からの最初のメールを受信した日を確認できます。その日から毎月使用量がリセットされます。
 
-#### How do I uninstall Cursor?
+#### Cursorをアンインストールするにはどうすればよいですか？
 
-You can follow [this guide](https://code.visualstudio.com/docs/setup/uninstall) to uninstall Cursor. Replace every occurrence of "VS Code" or "Code" with "Cursor", and ".vscode" with ".cursor".
+[このガイド](https://code.visualstudio.com/docs/setup/uninstall) に従ってCursorをアンインストールできます。「VS Code」または「Code」を「Cursor」に、「.vscode」を「.cursor」に置き換えてください。

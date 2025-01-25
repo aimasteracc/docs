@@ -1,39 +1,39 @@
 ---
-title: Troubleshooting Guide
+title: トラブルシューティングガイド
 ---
 
-The following is a list of information that is helpful to retrieve for most troubleshooting scenarios within Cursor:
+以下は、Cursorでのトラブルシューティングに役立つ情報のリストです：
 
-**01)**  Screenshot of issue (redact any sensitive information)  
+**01)**  問題のスクリーンショット（機密情報は削除してください）
 
-**02)**  Steps to reproduce 
+**02)**  再現手順
 
-**03)**  System Information from:  
+**03)**  以下から取得したシステム情報：
 
-`Cursor` > `Help` > `About` 
+`Cursor` > `ヘルプ` > `バージョン情報`
 
-**04)**  Are you using a VPN or Zscaler?  
+**04)**  VPNまたはZscalerを使用していますか？
 
-**05)**  Developer tools console errors 
+**05)**  開発者ツールのコンソールエラー
 
-Open developer tools via:
+以下の手順で開発者ツールを開きます：
 
-`Cursor` > `Help` > `Toggle Developer Tools`
+`Cursor` > `ヘルプ` > `開発者ツールの切り替え`
 
-and then click `Console` and see if there are any related errors.
+その後、`コンソール`をクリックして関連するエラーがないか確認してください。
 
-**06)**  Logs
+**06)**  ログ
 
-On Windows, you can find logs here:  
+Windowsの場合、以下の場所でログを確認できます：
 
 ```txt
 C:\Users\<your-user-name>\AppData\Roaming\Cursor\logs
 ```
 
-This is the parent folder of the folder that is opened when doing:
+これは以下の操作で開くフォルダの親フォルダです：
 
- - `Ctrl` + `Shift` + `P` (to open command palette in Cursor) 
+ - `Ctrl` + `Shift` + `P` (コマンドパレットを開くため)
  
- - Typing and selecting `Developer: Open Logs Folder` 
+ - `Developer: Open Logs Folder`と入力して選択
  
-You can also view logs in `Cursor` > `Terminal` > `Output` and then click on the dropdown and select `Window` or one of the other Cursor specific options, such as  `Cursor Tab` or `Cursor Indexing & Retrieval`.   
+また、`Cursor` > `ターミナル` > `出力`を開き、ドロップダウンから`Window`や`Cursor Tab`、`Cursor Indexing & Retrieval`などのCursor固有のオプションを選択してログを確認することもできます。
