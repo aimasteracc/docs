@@ -4,46 +4,45 @@ title: "@Files"
 
 ### `@Files`
 
-In AI input boxes such as in Cursor Chat and Cmd K, you can reference entire files by using `@Files`. 
-Also, if you continue to type after `@`, you will see your file search results after the [`@Code`](/context/@-symbols/@-code) strategy.
+Cursor ChatやCmd KなどのAI入力ボックスでは、`@Files`を使用してファイル全体を参照することができます。
+また、`@`の後に入力を続けると、[`@Code`](/context/@-symbols/@-code) 戦略の後にファイル検索結果が表示されます。
 
 
 
-In order to make sure the file you're referencing is the correct file, Cursor will show a preview of the file's path. This is especially useful when you have multiple files with the same name in different folders.
+参照しているファイルが正しいことを確認するために、Cursorはファイルのパスのプレビューを表示します。これは、異なるフォルダに同じ名前のファイルが複数ある場合に特に便利です。
 
 <Frame>
 <img src="/images/context/@file.png"/>
 </Frame>
 
 
-### Chat Long File References
+### チャットでの長いファイル参照
 
-In Cursor's Chat, if the contents of a file is too long, Cursor will chunk the file into smaller chunks and rerank them based on relevance to the query.
+Cursorのチャットでは、ファイルの内容が長すぎる場合、ファイルを小さなチャンクに分割し、クエリとの関連性に基づいて再ランク付けを行います。
 
 <Frame>
 <img src="/images/context/@file-long-file.png"/>
 </Frame>
 
 
-### Cmd K Chunking Strategy
+### Cmd Kのチャンク化戦略
 
-For Cmd K, Cursor uses the file references differently based on the content length as well.
+Cmd Kでは、コンテンツの長さに応じて異なるファイル参照方法を使用します。
 
-- auto
-  - Automatically pick one of the three reading strategies based on the file size 
-- full file
-  - The entire file is used as context.
-- outline
-  - Cursor parses the outline of the file and uses the information as context.
-- chunks
-  - Cursor chunks the file into smaller chunks and picks the most relevant one.
+- auto（自動）
+  - ファイルサイズに基づいて3つの読み取り戦略の中から自動的に1つを選択します
+- full file（ファイル全体）
+  - ファイル全体がコンテキストとして使用されます
+- outline（アウトライン）
+  - Cursorはファイルのアウトラインを解析し、その情報をコンテキストとして使用します
+- chunks（チャンク）
+  - Cursorはファイルを小さなチャンクに分割し、最も関連性の高いものを選択します
 
 <Frame>
 <img src="/images/context/@file-cmdk.png"/>
 </Frame>
 
 
-### Drag and Drop
+### ドラッグ＆ドロップ
 
-You can drag and drop files from the primary sidebar into Chat or Cmd K to add them as context as well.
-
+プライマリサイドバーからファイルをチャットやCmd Kにドラッグ＆ドロップして、コンテキストとして追加することもできます。

@@ -1,22 +1,22 @@
 ---
-title: Ignore Files
+title: 除外ファイル
 ---
 
-To ignore files to be included in Cursor features such as [codebase indexing](/context/codebase-indexing), you 
-can use a `.cursorignore` file in the root of your project. It works the same way as `.gitignore` works for git.
+Cursorの機能（[コードベースのインデックス作成](/context/codebase-indexing) など）から特定のファイルを除外するには、
+プロジェクトのルートディレクトリに`.cursorignore`ファイルを作成します。これはgitの`.gitignore`と同じように動作します。
 
-`.cursorignore` respects `.gitignore`. If you already have `.gitignore`, the files will be ignored by default.
-If you want to ignore additional files, you can add them to the `.cursorignore` file.
+`.cursorignore`は`.gitignore`の設定を尊重します。既に`.gitignore`がある場合、そのファイルは自動的に除外されます。
+追加で除外したいファイルがある場合は、`.cursorignore`ファイルに追記することができます。
 
-### An Example `.cursorignore` file
+### `.cursorignore` ファイルの例
 
 ```
-# Ignore all files in the `dist` directory
+# `dist` ディレクトリ内のすべてのファイルを除外
 dist/
 
-# Ignore all `.log` files
+# すべての `.log` ファイルを除外
 *.log
 
-# Ignore specific file `config.json`
+# 特定のファイル `config.json` を除外
 config.json
 ```

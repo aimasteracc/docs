@@ -1,26 +1,24 @@
 ---
-title: "Codebase Indexing"
+title: "コードベースのインデックス作成"
 ---
 
-### Index your Codebase
+### コードベースのインデックス作成
 
-For better and more accurate codebase answers using `@codebase` or `Ctrl/⌘ Enter`, you can index your codebase. Behind the scenes, Cursor
-computes embeddings for each file in your codebase, and will use these to improve the accuracy of your codebase answers.
+`@codebase`や`Ctrl/⌘ Enter`を使用してより正確なコードベースの回答を得るために、コードベースのインデックスを作成することができます。裏側では、Cursorがコードベース内の各ファイルの埋め込みを計算し、これらを使用してコードベースの回答の精度を向上させます。
 
-Your codebase index will automatically synchronize with your latest codebase changes.
+コードベースのインデックスは、最新のコードベースの変更と自動的に同期されます。
 
-The status of your codebase indexing is under `Cursor Settings` > `Features` > `Codebase Indexing`.
+コードベースのインデックス作成の状態は、`Cursor設定` > `機能` > `コードベースのインデックス作成`で確認できます。
 
 <Frame>
 <img src="/images/chat/codebase-indexing.png" />
 </Frame>
 
-### Advanced Settings
+### 詳細設定
 
-By default, Cursor will index all files in your codebase.
+デフォルトでは、Cursorはコードベース内のすべてのファイルをインデックス化します。
 
-You can also expand the `Show Settings` section to access more advanced options.
-Here, you can decide whether you want to enable automatic indexing for new repositories and configure the files
-that Cursor will ignore during repository indexing, in addition to your .gitignore settings.
+`設定を表示`セクションを展開して、より詳細なオプションにアクセスすることもできます。
+ここでは、新しいリポジトリの自動インデックス作成を有効にするかどうかを決定し、.gitignore設定に加えて、リポジトリのインデックス作成時にCursorが無視するファイルを設定することができます。
 
-If you have any large content files in your project that the AI definitely doesn’t need to read, [ignoring those files](/context/ignore-files) could improve the accuracy of the answers.
+プロジェクト内にAIが読む必要のない大きなコンテンツファイルがある場合、[それらのファイルを無視する](/context/ignore-files) ことで回答の精度を向上させることができます。
