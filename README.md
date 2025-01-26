@@ -1,18 +1,18 @@
-# Cursor Docs
+# Cursor ドキュメント
 
-This repo contains the source code for [Cursor's Documentation](https://docs.cursor.com).
+このリポジトリには[Cursorのドキュメント](https://docs.cursor.com) のソースコードが含まれています。
 
-Please open Pull Requests to suggest helpful changes!
+有用な変更を提案する場合は、プルリクエストを開いてください！
 
-### Development
+### 開発
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
+ドキュメントの変更をローカルでプレビューするには、[Mintlify CLI](https://www.npmjs.com/package/mintlify) をインストールしてください。インストールするには、以下のコマンドを使用します：
 
 ```
 npm i -g mintlify
 ```
 
-Run the following command at the root of your documentation (where mint.json is)
+ドキュメントのルートディレクトリ（`mint.json`があるディレクトリ）で以下のコマンドを実行します：
 
 ```
 mintlify dev
@@ -20,5 +20,5 @@ mintlify dev
 
 #### Troubleshooting
 
-- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
-- Page loads as a 404 - Make sure you are running in a folder with `mint.json`
+- Mintlify devが実行されていない - `mintlify install`を実行して依存関係を再インストールしてください。
+- ページが404エラーとして表示される - `mint.json`があるディレクトリで実行していることを確認してください。
